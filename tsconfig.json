@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "typeRoots": [
+      "./src/types"
+    ],
+    "target": "ES2018",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "noEmitHelpers": false,
+    "lib": [
+      "ESNext",
+      "ESNext.AsyncIterable",
+      "DOM"
+    ],
+    "esModuleInterop": true,
+    "allowJs": true,
+    "sourceMap": true,
+    "strict": true,
+    "noEmit": true,
+    "baseUrl": "./",
+    "paths": {
+      "*": [
+        "*"
+      ],
+      "~/*": [
+        "./src/*"
+      ],
+      "@/*": [
+        "./src/*"
+      ],
+      "@style": ["./src/assets/style/*" ],
+      "@interface": [ "./src/interfaces/*" ]
+    },
+    "types": [
+      "@types/node",
+      "@nuxt/types",
+      "@nuxtjs/auth-next"
+    ]
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
